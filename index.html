@@ -11,13 +11,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">       
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
        <style>
-            .container{
+            .car{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 60%;
+                margin: auto;
+            }
+
+            .contain{
                 background-color: white;
                 margin-top: 0px;
 
             }
+            p{
+                font-weight:400;
+            }
+
+            
             .presentation{
                 background-color: #371d5e;
                 position: relative;
@@ -47,7 +62,7 @@
 
             h1{
             font-family: "Pixelify Sans", sans-serif;
-            font-size: 60px;
+            font-size: 6rem;
             padding: 0;
             font-weight:bold;
             margin-top: 0;
@@ -56,7 +71,7 @@
             }
             h2{
                 font-family: "Playwrite ES DECO";
-                font-size: 40px;
+                font-size: 4rem;
                 margin-bottom: 0;
                 margin-top: 2px;
             }
@@ -95,7 +110,7 @@
             }
 
             .pic{
-                height: 300px;
+                height: 500px;
                 text-align: center;
                 overflow: clip;
                 position:static;
@@ -107,6 +122,7 @@
                 width: 40%;
                 margin: auto;
                 padding-bottom: 185px;
+
             }
             .icons{
                 height: 100px;
@@ -130,7 +146,7 @@
 
             .infitem{
                 text-align: justify;
-                width: 40%;
+                width: 50%;
                 margin: auto;
             }
             .skl{
@@ -228,7 +244,24 @@
 
             .photo2{
                 height: 100px;
-                padding-top: 100px;
+                margin-top: 130px;
+                margin-bottom: 30px;
+            }
+
+            .call{
+                padding-bottom: 200px;
+            }
+
+            .carr{
+                color: pink;
+                background-color: #371d5e;
+                border: none;
+            }
+
+            .tait{
+                color: #8D73B3;
+                font-weight: bold;
+                font-family: "Shantell Sans", cursive;
             }
 
             @media(max-width: 1023px){
@@ -282,48 +315,167 @@
                     width: 60%;
                 }
 
-                .call{
-                    padding-bottom: 60px;
+                .container{
+                    width: 100%;
                 }
+
             }
         </style>
         
     </head>
     <body>
         <section>
-        <div class="container presentation">
+        <div class="contain presentation">
             <img class="backg" src="./Pictures/control.png" alt="control">
             <h1>HELLO,<br> I'm Gabriel. <br></h1>
             <h2>A future Web Developer.</h2>
             <img class="backg2" src="./Pictures/control.png" alt="control">
-            <img class="pic" src="./Pictures/lap3.png">
+            <img class="pic" src="./Pictures/lap3.png" alt="little laptop">
 
         </div>
         </section>
         <section>
-            <div class="container info">
+            <div class="contain info">
                 <img class="photo" src="./Pictures/Photo.jpg" alt="photo of developer">
                 <h2 class="infor">I'm...</h2>
                 <p class="intro">a graduated Informatics teacher, currently working as an English teacher and a future web developer. I love playing videogames and watching TV shows. 🎮🍿 <br>
-                    The beautiful girl by my side is my girlfriend Josueth, she's always supported me and helped me be the person I'm today. <br> <br> <a href="https://rglopezl.github.io/capstoneproject/"> Click to know more about me.</a>
+                    The beautiful girl by my side is my girlfriend Josueth, she's always supported me and helped me be the person
+                     I'm today. <br> <br> <a style="color: #371d5e;" href="https://rglopezl.github.io/capstoneproject/"> Click to know more about me.</a>
                 </p>
 
             </div>
         </section>
         <section class="projects">
-            <div class="infitem info2" style="text-align: center;">
-                <h2 class="infor sep call" style="text-align: center; height: 50px;">My project</h2>
-                <img class="photo2" src="./Pictures/Prime.png" alt="photo of developer">
-                <p class="intro2" style="padding-bottom: 200px;">My current and only project is a little language institute called "Prime English" where my girlfriend and I teach English
+            
+                <div class="taitol">
+                <h2 class="infor sep call" style="text-align: center; height: 50px;">My projects</h2>
+                </div>
+                    <div class="container">
+
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder:" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><image width="100%" height="100%" href="Pictures/Portfolio.PNG"></image></svg>
+                              <div class="card-body">
+                                <p class="card-text tait">Portfolio 1</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary carr" onclick=" window.open('https://rglopezl.github.io/htm-portfolio/','_blank')">Visit Project</button>
+                                  </div>
+                                  <small class="text-body-secondary">©</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder:" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><image width="100%" height="100%" href="Pictures/web design.PNG"></image></svg>
+                              <div class="card-body">
+                                <p class="card-text tait">Design Agency</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary carr" onclick=" window.open('https://rglopezl.github.io/flex/','_blank')">Visit Project</button>
+                                  </div>
+                                  <small class="text-body-secondary">©</small>
+                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder:" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><image width="100%" height="100%" href="Pictures/Mondrian.PNG"></image></svg>
+                              <div class="card-body">
+                                <p class="card-text tait">Mondrian Grid</p>
+                               <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary carr" onclick=" window.open('https://rglopezl.github.io/Mondrian/','_blank')" >Visit Project</button>
+
+                                  </div>
+                                  <small class="text-body-secondary">©</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><image width="100%" height="100%" width href="Pictures/Tindog.PNG"></image></svg>
+                              <div class="card-body">
+                                <p class="card-text tait">Tindog</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary carr" onclick=" window.open('https://rglopezl.github.io/tindog/','_blank')" >Visit Project</button>
+
+                                  </div>
+                                  <small class="text-body-secondary">©</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm">
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><image width="100%" height="100%" href="Pictures/canva.PNG"></image></svg>
+                              <div class="card-body">
+                                <p class="card-text tait">Canva Webpage Design</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary carr" onclick=" window.open('https://primeenglish.my.canva.site/','_blank')">Visit Project</button>
+
+                                  </div>
+                                  <small class="text-body-secondary">©</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm">
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><image width="100%" height="100%" href="Pictures/bootstrap.PNG"></image></svg>
+                              <div class="card-body">
+                                <p class="card-text tait"> Bootstrap Personal Project</p>
+                                 <div class="d-flex justify-content-between align-items-center">
+                                   <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary carr" onclick=" window.open('https://rglopezl.github.io/bootstrap-personal/','_blank')"> Visit Project</button>
+                                   </div>
+                                   <small class="text-body-secondary">©</small>
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
+                           <div class="col">
+                             <div class="card shadow-sm">
+                               <svg class="bd-placeholder-img card-img-top" width="100px" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: wth" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><image width="100%" height="100%" href="./Pictures/new project meme.png"></svg>
+                               <div class="card-body">
+                                 <p class="card-text tait">Project #</p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                   <div class="btn-group">
+                                     <button type="button" class="btn btn-sm btn-outline-secondary carr">Visit Project</button>
+                                   </div>
+                                   <small class="text-body-secondary">©</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+        
+          
+
+                </div>
+                </div>
+                <div class="infitem info2" style="text-align: center;">
+                <div class="panel">
+
+                <img class="photo2" src="./Pictures/Prime.png" alt="Prime English logo">
+                <p class="intro2" style="padding-bottom: 200px;">Apart from my web design profjects I have a personal project which is a little language institute called "Prime English" where my girlfriend and I teach English
                     It's being a hard but satisfying work to make it grow as it is today. I hope I can use my improving
                     web developing skills to help this project grow and look great on the web. <br> <br> <a href="https://primeescueladecapacitacion.com/" style="color: #371d5e;">Know more about our institute</a>
                 </p>
+            </div>
 
             </div>
+        </div>
         </section>
         <section>
 
-            <div class="container info2">
+            <div class="contain info2">
                 <div class="taitol">
                 <h2 class="infor sep">My Skills</h2>
                 </div>
@@ -337,7 +489,7 @@
                    and good coordination to master them.
                 </p>
                 </div>
-                <div class="container info2">
+                <div class="contain info2">
                     <div class="infitem">
                 <img class="icons odd" src="./Pictures/Stream mascot.png" alt=" cartoon cat playing videogames">
                     <h3 class="skl">Part-Time Streamer</h3>
@@ -356,7 +508,7 @@
                        forward to learning another language. It'll probably be Japanese.
                         </p>
                         </div>
-                        <div class="container info2">
+                        <div class="contain info2">
                             <div class="infitem">
                         <img class="icons odd" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm94cG5uY3RzMXI5Z2JrbG01M2V2d3l2bjlrdW13ZG42ZTE0YW0zdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/demgpwJ6rs2DS/giphy.gif" alt=" cartoon cat playing videogames">
                             <h3 class="skl">Master Cook</h3>
@@ -368,7 +520,7 @@
             </div>    
         </section>
         <section class="end">
-            <div class="container fini">
+            <div class="contain fini">
 
                 <div>
                     <h2 class="last">Let's be friends</h2>
@@ -396,9 +548,10 @@
             </div>
         </section>
         <section class="footer">
-            <div class="container fot">
-                <p>© Gabriel López @ Chanchus.</p>
+            <div class="contain fot">
+                <p>© Gabriel López @Chanchus.</p>
             </div>
         </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
